@@ -1,4 +1,17 @@
-# Patrón de diseño Anti Corruption Layer (ACL)
+# Índice
+
+- [Patrón de diseño Anti Corruption Layer (ACL)](#patrón-de-diseño-anti-corruption-layer-acl)
+- [Objetivo](#objetivo)
+- [Implementación del ACL](#implementación-del-acl)
+  - [Paso 1: Identificación de los Subsistemas o Módulos](#paso-1-identificación-de-los-subsistemas-o-módulos)
+  - [Paso 2: Identificación de las Interacciones](#paso-2-identificación-de-las-interacciones)
+  - [Paso 3: Creación de la Capa de Traducción](#paso-3-creación-de-la-capa-de-traducción)
+  - [Paso 4: Implementación de la Lógica de Traducción](#paso-4-implementación-de-la-lógica-de-traducción)
+  - [Paso 5: Prueba del ACL](#paso-5-prueba-del-acl)
+- [Ejemplo de Aplicación](#ejemplo-de-aplicación)
+- [Conclusiones](#conclusiones)
+
+## Patrón de diseño Anti Corruption Layer (ACL)
 
 En la arquitectura de software, el patrón de diseño Anti Corruption Layer (ACL) se utiliza para proteger un subsistema de cambios no deseados o influencias negativas provenientes de otros subsistemas. Es especialmente útil cuando se deben integrar sistemas heredados o de terceros que tienen diferentes modelos de dominio. El ACL actúa como una capa de traducción que facilita la comunicación entre los subsistemas y asegura que no se produzcan corrupciones en el modelo de dominio protegido. Este patrón es particularmente valioso en arquitecturas de microservicios y en el enfoque de diseño de software Domain-Driven Design (DDD).
 
